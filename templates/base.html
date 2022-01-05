@@ -1,17 +1,116 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" >
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Flags LGBT+</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LGBT+ flagger</title>
+    <meta
+      name="description"
+      content="Renunciation of Indonesian citizenship process changed in 2020. This site aims to answer all your questions on the new process."
+    />
 
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/desktop.css') }}" media="(min-width: 735px)">
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-    </body>
+    <meta property="og:url" content="https://flagger.lgbt/" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Flagger - Know or create the flag that represents you."
+    />
+    <meta
+      property="og:description"
+      content="In a diverse world we all deserve to be represented, a flag helps us to do it, but, and if we do not identify with one, then we create one that does."
+    />
+    <meta
+      property="og:image"
+      content="{{ url_for('static', filename='assets/thumbnail.webp') }}"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="flagger.lgbt" />
+    <meta property="twitter:url" content="https://flagger.lgbt/" />
+    <meta
+      name="twitter:title"
+      content="Flagger - Know or create the flag that represents you."
+    />
+    <meta
+      name="twitter:description"
+      content="In a diverse world we all deserve to be represented, a flag helps us to do it, but, and if we do not identify with one, then we create one that does."
+    />
+    <meta
+      name="twitter:image"
+      content="{{ url_for('static', filename='assets/thumbnail.webp') }}"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="{{ url_for('static', filename='assets/favicon/apple-touch-icon.png') }}"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="{{ url_for('static', filename='assets/favicon/favicon-32x32.png') }}"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="{{ url_for('static', filename='assets/favicon/favicon-16x16.png') }}"
+    />
+    <link
+      rel="manifest"
+      href="{{ url_for('static', filename='assets/favicon/site.webmanifest') }}"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/main.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/desktop.css') }}"
+      media="(min-width: 800px)"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <a href="/"
+          ><img
+            src="{{ url_for('static', filename='assets/logo.svg') }}"
+            alt="logo of LGBT+ flagger"
+        /></a>
+        <nav>
+          <ul class="social-menu">
+            <li>
+              <a
+                href="https://www.facebook.com/sharer/sharer.php?u=https://flagger.lgbt/creator"
+                ><img
+                  src="{{ url_for('static', filename='assets/facebook.png') }}"
+                  alt="Share on Facebook"
+                  class="social-link"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://twitter.com/intent/tweet?hashtags=flagger&text=Create%20the%20flag%20that%20identifies%20you&url=https%3A%2F%2Fflagger.lgbt%2Fcreator"
+                ><img
+                  src="{{ url_for('static', filename='assets/twitter.png') }}"
+                  alt="Share on Twitter"
+                  class="social-link"
+              /></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+    <main>{% block main %}{% endblock %}</main>
+  </body>
 </html>

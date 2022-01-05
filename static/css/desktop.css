@@ -1,0 +1,22 @@
+.header {
+  align-items: center;
+}
+
+.social-menu {
+  flex-direction: row;
+}
+
+.hero {
+  max-width: 800px;
+}
+
+.hero__title {
+  margin: 16px 0;
+  font-size: 54px;
+  line-height: 70px;
+}
+
+.hero__subtitle {
+  font-size: 18px;
+  line-height: 30px;
+}

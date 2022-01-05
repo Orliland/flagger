@@ -1,1 +1,22 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %} {% block main %}
+<div class="hero">
+  <h1 class="hero__title">
+    In a diverse world we all deserve to be represented
+
+    <!-- The <span class="hero__underline">differences</span> make us unique -->
+  </h1>
+  <p class="hero__subtitle">
+    a flag helps us to do it, but, and if we do not identify with one, then we
+    create one that does.
+  </p>
+</div>
+<div class="flag-bg">
+  <a href="/creator" class="btn-nFlag">Create My Flag</a>
+  <div class="flag-bg__row flag-bg__row--red"></div>
+  <div class="flag-bg__row flag-bg__row--orange"></div>
+  <div class="flag-bg__row flag-bg__row--yellow"></div>
+  <div class="flag-bg__row flag-bg__row--green"></div>
+  <div class="flag-bg__row flag-bg__row--blue"></div>
+  <div class="flag-bg__row flag-bg__row--purple"></div>
+</div>
+{% endblock %}

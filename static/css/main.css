@@ -1,0 +1,77 @@
+@import url("./buttons.css");
+@import url("./flag-bg.css");
+
+:root {
+  font-family: "Poppins", sans-serif;
+  color: #182f43;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+  background-color: #faf1ec;
+}
+
+.wrapper {
+  width: calc(100% - 70px);
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 76px;
+}
+
+main {
+  height: calc(100vh - 76px);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.hero {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  align-self: end;
+  width: calc(100% - 70px);
+  max-width: 540px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.hero__title {
+  margin: 20px 0;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 38px;
+}
+
+.hero__subtitle {
+  margin: 0 auto;
+  margin-top: 0px;
+  max-width: 540px;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.social-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style: none;
+  padding: 0px;
+}
+
+.social-link {
+  width: 36px;
+  height: 36px;
+}
+
+.social-link:hover {
+  transform: scale(1.2);
+  filter: brightness(0.8);
+}
